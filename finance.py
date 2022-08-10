@@ -23,3 +23,16 @@ if Name in Code_name_list:
     st.pyplot(fig)
 elif Name not in Code_name_list:
     st.text('검색하신 주식 종목이 없습니다. 정확하게 입력해주세요.')
+
+    
+    # FX 환율, 1995 ~ 현재
+usdkrw = fdr.DataReader('USD/KRW', '1995-01-01') # 달러 원화
+usdeur = fdr.DataReader('USD/EUR', '1995-01-01') # 달러 유로화
+usdcny = fdr.DataReader('USD/CNY', '1995-01-01') # 달러 위엔화
+
+# 스트림릿 템플릿
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['usdkrw[[Close]]', 'usdeur[[Close]]', 'usdcny[[Close]]'])
+
+st.line_chart(chart_data)
