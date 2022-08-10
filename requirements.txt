@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+FinanceDataReader
+koreanize_matplotlib 
+streamlit
