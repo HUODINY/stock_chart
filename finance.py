@@ -37,3 +37,19 @@ chart_data = pd.DataFrame(
      columns=['usdkrw[[Close]]', 'usdeur[[Close]]', 'usdcny[[Close]]'])
 
 st.line_chart(chart_data)
+
+"""유선님 """
+fig = px.line(df, y='종가', title='{}의 종가(close) Time Series'.format(Name))
+
+fig.update_xaxes(
+    rangeslider_visible=True,
+    rangeselector=dict(
+        buttons=list([
+            dict(count=1, label="1m", step="month", stepmode="backward"),
+            dict(count=3, label="3m", step="month", stepmode="backward"),
+            dict(count=6, label="6m", step="month", stepmode="backward"),
+            dict(step="all")
+        ])
+    )
+)
+fig.show()
