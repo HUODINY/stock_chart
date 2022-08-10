@@ -1,6 +1,6 @@
 pandas
 streamlit
-finance-dataReader
+financedataReader
 matplotlib
 koreanize_matplotlib
 plotly
