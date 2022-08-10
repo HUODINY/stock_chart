@@ -1,3 +1,10 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import FinanceDataReader as fdr
+import koreanize_matplotlib 
+import streamlit as st
+
 # FX 환율, 1995 ~ 현재
 usdkrw = fdr.DataReader('USD/KRW', '1995-01-01') # 달러 원화
 usdeur = fdr.DataReader('USD/EUR', '1995-01-01') # 달러 유로화
