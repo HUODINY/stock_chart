@@ -1,6 +1,5 @@
 pandas
-numpy
-matplotlib.pyplot
-FinanceDataReader
-koreanize_matplotlib 
 streamlit
+finance-dataReader
+matplotlib
+koreanize_matplotlib
