@@ -39,6 +39,7 @@ chart_data = pd.DataFrame(
 st.line_chart(chart_data)
 
 """유선님 """
+"""
 fig = px.line(df, y='종가', title='{}의 종가(close) Time Series'.format(Name))
 
 fig.update_xaxes(
@@ -53,3 +54,4 @@ fig.update_xaxes(
     )
 )
 fig.show()
+"""
